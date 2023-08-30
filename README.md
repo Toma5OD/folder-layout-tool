@@ -76,11 +76,11 @@ This tool lists all files and folders, excluding `.git` directories. It will not
 ## User Prompts
 
 1. **Enter the path of the folder**: Input the full path of the folder you want to analyze.
-2. **Include .git files? (Y/N)**: Choose whether to include `.git` files in the structure.
-3. **Output to .txt file? (Y/N)**: Choose to save the folder structure in a `.txt` file.
-4. **Use dashes for indentation? (Y/N)**: Opt for enhanced `.txt` format with dashes instead of spaces.
-5. **Display in terminal? (Y/N)**: Display the folder structure in the terminal window.
-6. **Use icons for folders and files? (Y/N)**: Icons will be used to indicate folders and files.
+2. **Display in terminal? (Y/N)**: Choose whether to display the folder structure in the terminal window.
+3. **Output to `.txt` file? (Y/N)**: Decide if you want to save the folder structure in a `.txt` file.
+4. **Include `.git` files? (Y/N)**: Specify if `.git` files should be included in the structure.
+5. **Use dashes for indentation? (Y/N)**: Opt for an enhanced `.txt` format using dashes instead of spaces for indentation.
+6. **Use icons for folders and files? (Y/N)**: Select if icons should be used to indicate folders and files.
 
 ## Contributing
 
