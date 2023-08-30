@@ -4,15 +4,22 @@
 
 This project includes Python scripts to visualize the folder structure in a readable way. The main tool is `folder_structure_tool.py`, which offers a variety of features including the option to include `.git` files, output to `.txt` files, and use icons for better visualization.
 
-## Folder Structure
-```
-📁-folder-layout-tool
-----📄-list_folder_structure.py
-----📄-list_folder_structure_no_git.py
-----📄-folder_structure_tool.py
-----📄-README.md
-```
+![Example of folder structure in terminal](public/image1.png)
+*Example of folder structure displayed directly in the terminal.*
 
+## Folder Structure of this Repo
+
+```
+📁 folder-layout-tool
+    📄 list_folder_structure.py
+    📄 list_folder_structure_no_git.py
+    📄 folder_structure_tool.py
+    📄 README.md
+    📄 LICENSE
+    📁 public
+        📄 image1.png
+        📄 image2.png
+```
 
 ## Requirements
 
@@ -21,20 +28,22 @@ This project includes Python scripts to visualize the folder structure in a read
 ## Usage
 
 1. Clone this repository or download the script.
-    ```bash
+    \```bash
     git clone https://github.com/Toma5OD/folder-layout-tool
-    ```
+    \```
 2. Open a terminal and navigate to the directory where the script is located.
-    ```bash
+    \```bash
     cd folder-layout-tool
-    ```
+    \```
 3. Run the **main script** `folder_structure_tool.py`:
-    ```bash
+    \```bash
     python folder_structure_tool.py
-    ```
+    \```
+
+![Example of `.txt` file output](public/image2.png)
+*Example of `.txt` file generated using the tool.*
 
 ## Tools Explanation
-
 
 ### `folder_structure_tool.py` (Main Tool)
 
@@ -57,7 +66,7 @@ $ python folder_structure_tool.py
 Upon execution, the terminal will present a series of questions for customization. The sequence of interactions will closely resemble the following:
 
 ```bash
-$ Enter the path of the folder: /home/USER_NAME/dev/onboarding-os-ci
+$ Enter the path of the folder: /home/USER_NAME/EXAMPLE
 $ Display in terminal? (Y/N): 
 $ Output to `.txt` file? (Y/N): 
 $ Include `.git` files? (Y/N): 
@@ -85,4 +94,3 @@ This tool lists all files and folders, excluding `.git` directories. It will not
 ## Contributing
 
 Feel free to open an issue or pull request if you find any bugs or have suggestions for improvements.
-
