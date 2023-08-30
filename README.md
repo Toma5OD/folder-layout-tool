@@ -22,7 +22,7 @@ This project includes Python scripts to visualize the folder structure in a read
 
 1. Clone this repository or download the script.
     ```bash
-    git clone <repository_url>
+    git clone https://github.com/Toma5OD/folder-layout-tool
     ```
 2. Open a terminal and navigate to the directory where the script is located.
     ```bash
