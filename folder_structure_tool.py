@@ -21,7 +21,10 @@ def list_files(startpath, ignore_git, use_icons):
     return structure
 
 def main():
-    folder_path = input("Enter the path of the folder: ")
+    folder_path = input("Enter the path of the folder (hit Enter for current folder): ")
+    if not folder_path:
+        folder_path = os.getcwd()
+    folder_path = os.getcwd()
     show_in_terminal = input("Display in terminal? (Y/N): ").strip().lower()
     output_txt = input("Output to .txt file? (Y/N): ").strip().lower()
     include_git = input("Include .git files? (Y/N): ").strip().lower()
