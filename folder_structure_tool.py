@@ -1,7 +1,7 @@
 import os
 from datetime import datetime
 
-def list_files(startpath, ignore_git, use_icons, tree_view):
+def list_files(startpath, ignore_git, use_icons, tree_view, include_node_modules):
     folder_icon = "\U0001F4C1" if use_icons else "Folder:"
     file_icon = "\U0001F4C4" if use_icons else "File:"
     
@@ -12,6 +12,8 @@ def list_files(startpath, ignore_git, use_icons, tree_view):
 
     for root, dirs, files in os.walk(startpath):
         if ignore_git and ".git" in root:
+            continue
+        if not include_node_modules and 'node_modules' in root:
             continue
             
         level = root.replace(startpath, '').count(os.sep)
@@ -33,6 +35,7 @@ def main():
     show_in_terminal = input("Display in terminal? (Y/N): ").strip().lower()
     output_txt = input("Output to .txt file? (Y/N): ").strip().lower()
     include_git = input("Include .git files? (Y/N): ").strip().lower()
+    include_node_modules = input("Include node_modules folder? (Y/N): ").strip().lower() == 'y'
     use_dashes = input("Use dashes for indentation? (Y/N): ").strip().lower()
     use_icons = input("Use icons for folders and files? (Y/N): ").strip().lower()
     tree_view = input("Use tree-like structure? (Y/N): ").strip().lower() == 'y'
@@ -40,7 +43,7 @@ def main():
     ignore_git = include_git != 'y'
     use_icons = use_icons == 'y'
     
-    folder_structure = list_files(folder_path, ignore_git, use_icons, tree_view)
+    folder_structure = list_files(folder_path, ignore_git, use_icons, tree_view, include_node_modules)
     
     if output_txt == 'y':
         txt_filename = "{}_folder_structure.txt".format(os.path.basename(folder_path))

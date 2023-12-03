@@ -2,7 +2,7 @@
 
 ## Overview
 
-This project includes Python scripts to visualize the folder structure in a readable way. The main tool is `folder_structure_tool.py`, which offers a variety of features including the option to include `.git` files, output to `.txt` files, and use icons for better visualization.
+This project includes Python scripts to visualize the folder structure in a readable way. The main tool is `folder_structure_tool.py`, which offers a variety of features including the option to include `.git` files, output to `.txt` files, and use icons for better visualization and now, the ability to include or exclude the contents of node_modules folders.
 
 ![Example of folder structure in terminal](public/image1.png)
 *Example of folder structure displayed directly in the terminal.*
